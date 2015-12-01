@@ -3,7 +3,7 @@
   "version": "1.14.2",
   "description": "Scaffold out an Electron app boilerplate",
   "license": "MIT",
-  "repository": "sindresorhus/generator-electron",
+  "repository": "soixantecircuits/generator-electron-soixante",
   "author": [
     {
       "name": "Soixante circuits",
