@@ -1,8 +1,8 @@
 {
   "name": "<%= appName %>",
   "productName": "<%= classifiedAppName %>",
-  "version": "0.0.0",
-  "description": "My <%= superb %> app",
+  "version": "1.0.0",
+  "description": "<%= appName %> by Soixante circuits",
   "license": "MIT",
   "repository": "<%= githubUsername %>/<%= appName %>",
   "author": {
@@ -12,32 +12,18 @@
   },
   "electronVersion": "0.35.0",
   "scripts": {
-    "test": "xo",
-    "start": "electron .",
-    "build": "electron-packager . $npm_package_productName --out=dist --ignore='^/dist$' --prune --asar --all --version=$npm_package_electronVersion"
+    "start": "export NODE_ENV='dev'; electron .",
+    "build": "export NODE_ENV='production'; electron-packager . $npm_package_productName --out=dist --ignore='^/dist$' --prune --asar --all --version=$npm_package_electronVersion"
   },
   "files": [
     "index.js",
-    "index.html",
-    "index.css"
-  ],
-  "keywords": [
-    "electron-app",
-    "electron"
+    "app/"
   ],
   "dependencies": {
     "electron-debug": "^0.5.0"
   },
   "devDependencies": {
     "electron-packager": "^5.0.0",
-    "electron-prebuilt": "^0.35.0",
-    "xo": "^0.11.1"
-  },
-  "xo": {
-    "esnext": true,
-    "envs": [
-      "node",
-      "browser"
-    ]
+    "electron-prebuilt": "^0.35.0"
   }
 }

@@ -1,21 +1,26 @@
 # <%= appName %>
 
-> My <%= superb %> app
+> <%= appName %> by Soixante circuits
 
+## Develop
 
-## Dev
+#### Prérequisites
+
+* `node >= 4.0.0`
+
+#### Install dependencies
 
 ```
 $ npm install
 ```
 
-### Run
+#### Run
 
 ```
 $ npm start
 ```
 
-### Build
+## Build
 
 ```
 $ npm run build

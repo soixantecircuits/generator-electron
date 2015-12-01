@@ -8,6 +8,9 @@ require('crash-reporter').start();
 // adds debug features like hotkeys for triggering dev tools and reload
 require('electron-debug')();
 
+// add some command line arguments
+app.commandLine.appendArgument('--disable-pinch');
+
 // prevent window being garbage collected
 let mainWindow;
 
@@ -18,21 +21,28 @@ function onClosed() {
 }
 
 function createMainWindow() {
-	const win = new electron.BrowserWindow({
-		width: 600,
-		height: 400
-	});
+	var winOptions = {width: 1920, height: 1080};
+	if(process.env['NODE_ENV'] != 'dev'){
+		winOptions.kiosk = true;
+		winOptions.frame = false;
+		winOptions.resizable = false;
+		winOptions.fullScreen = true;
+		winOptions.alwaysOnTop = true;
+	}
+	const win = new electron.BrowserWindow(winOptions);
 
-	win.loadURL(`file://${__dirname}/index.html`);
+	win.loadURL(`file://${__dirname}/src/index.html`);
 	win.on('closed', onClosed);
+
+	if(process.env['NODE_ENV'] == 'dev'){
+		win.openDevTools();
+	}
 
 	return win;
 }
 
 app.on('window-all-closed', () => {
-	if (process.platform !== 'darwin') {
-		app.quit();
-	}
+	app.quit();
 });
 
 app.on('activate-with-no-open-windows', () => {

@@ -1,8 +1,4 @@
-# generator-electron [![Build Status](https://travis-ci.org/sindresorhus/generator-electron.svg?branch=master)](https://travis-ci.org/sindresorhus/generator-electron)
-
-> Scaffold out an [Electron app boilerplate](https://github.com/sindresorhus/electron-boilerplate)
-
-![](screenshot.png)
+# generator-electron-soixante
 
 *See [awesome-electron](https://github.com/sindresorhus/awesome-electron) for more useful Electron resources.*
 
@@ -26,3 +22,5 @@ $ yo electron
 ## License
 
 MIT © [Sindre Sorhus](http://sindresorhus.com)
+
+*Current version is a fork by [Soixante circuits](http://soixantecircuits.fr).*
