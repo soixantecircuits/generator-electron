@@ -1,6 +1,6 @@
 {
   "name": "generator-electron-soixante",
-  "version": "1.14.2",
+  "version": "1.14.3",
   "description": "Scaffold out an Electron app boilerplate",
   "license": "MIT",
   "repository": "soixantecircuits/generator-electron-soixante",
