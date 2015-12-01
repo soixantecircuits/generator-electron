@@ -1,18 +1,21 @@
 {
   "name": "generator-electron-soixante",
-  "version": "1.14.1",
+  "version": "1.14.2",
   "description": "Scaffold out an Electron app boilerplate",
   "license": "MIT",
   "repository": "sindresorhus/generator-electron",
-  "author": [{
-    "name": "Soixante circuits",
-    "email": "contact@soixantecircuits.fr",
-    "url": "soixantecircuits.fr"
-  }, {
-    "name": "Sindre Sorhus",
-    "email": "sindresorhus@gmail.com",
-    "url": "sindresorhus.com"
-  }],
+  "author": [
+    {
+      "name": "Soixante circuits",
+      "email": "contact@soixantecircuits.fr",
+      "url": "soixantecircuits.fr"
+    },
+    {
+      "name": "Sindre Sorhus",
+      "email": "sindresorhus@gmail.com",
+      "url": "sindresorhus.com"
+    }
+  ],
   "engines": {
     "node": ">=4.0.0"
   },
