@@ -6,7 +6,7 @@
 ## Install
 
 ```
-$ npm install --global generator-electron
+$ npm install --global generator-electron-soixante
 ```
 
 
@@ -15,7 +15,7 @@ $ npm install --global generator-electron
 With [yo](https://github.com/yeoman/yo):
 
 ```
-$ yo electron
+$ yo electron-soixante
 ```
 
 
