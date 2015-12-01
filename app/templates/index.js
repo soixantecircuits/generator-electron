@@ -31,7 +31,7 @@ function createMainWindow() {
 	}
 	const win = new electron.BrowserWindow(winOptions);
 
-	win.loadURL(`file://${__dirname}/src/index.html`);
+	win.loadURL(`file://${__dirname}/dist/index.html`);
 	win.on('closed', onClosed);
 
 	if(process.env['NODE_ENV'] == 'dev'){
@@ -45,7 +45,7 @@ app.on('window-all-closed', () => {
 	app.quit();
 });
 
-app.on('activate-with-no-open-windows', () => {
+app.on('activate', () => {
 	if (!mainWindow) {
 		mainWindow = createMainWindow();
 	}

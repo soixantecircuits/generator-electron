@@ -4,9 +4,10 @@
 
 ## Develop
 
-#### Prérequisites
+#### Prerequisites
 
-* `node >= 4.0.0`
+* `node >= v4.0.0` ([download here](http://nodejs.org))
+* `webpack` ([download here](https://github.com/webpack/webpack))
 
 #### Install dependencies
 
@@ -16,6 +17,10 @@ $ npm install
 
 #### Run
 
+```
+$ webpack --progress --colors --watch
+```
+And in an other shell:
 ```
 $ npm start
 ```
